@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
+import Navbar from "./Navbar";
 
 // Import images
 import logoImg from "../assets/images/logo.png";
@@ -21,31 +22,7 @@ const LandingPage: React.FC = () => {
       <div className="background-gradient"></div>
 
       {/* Navbar */}
-      <nav className="navbar">
-        <div className="nav-container">
-          <div className="logo">
-            <img src={logoImg} alt="Marriage MBA Logo" loading="eager" />
-          </div>
-          <div className="nav-links">
-            <a href="#" className="nav-link active">
-              Home
-            </a>
-            <a href="#" className="nav-link">
-              Books
-            </a>
-            <a href="#" className="nav-link">
-              Semesters
-            </a>
-            <a href="#" className="nav-link">
-              About Us
-            </a>
-          </div>
-          <div className="nav-auth">
-            <button className="btn-login">Log in</button>
-            <button className="btn-signup">sign up</button>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="hero">
