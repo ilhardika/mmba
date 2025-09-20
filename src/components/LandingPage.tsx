@@ -1,10 +1,10 @@
 import React from "react";
 import "./LandingPage.css";
 import Navbar from "./Navbar";
+import Hero from "./Hero";
 
 // Import images
 import logoImg from "../assets/images/logo.png";
-import heroImg from "../assets/images/hero-image.png";
 import brokenHeartImg from "../assets/images/broken-heart.png";
 import bookLoveMistakesImg from "../assets/images/book-love-mistakes.png";
 import bookMarriageMagnetImg from "../assets/images/book-marriage-magnet.png";
@@ -25,29 +25,7 @@ const LandingPage: React.FC = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-container">
-          <div className="hero-left">
-            <img
-              src={heroImg}
-              alt="Hero"
-              className="hero-image"
-              loading="eager"
-            />
-          </div>
-          <div className="hero-right">
-            <h1 className="hero-title">
-              Write Your Own Happily Ever Hereafter
-            </h1>
-            <p className="hero-subtitle">
-              A 10-Step Roadmap for Muslim Women to Find Their Mr. Right,
-              Divorce-Proof Their Future Marriage, and Become a True-Love Magnet
-              — without dating, swiping, or settling.
-            </p>
-            <button className="btn-cta">START YOUR JOURNEY</button>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Why Section */}
       <section className="why-section">
