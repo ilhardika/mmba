@@ -1,187 +1,303 @@
 /* Why Section */
 .why-section {
-  padding: 80px 36px;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .why-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .why-card {
-  background: rgba(255, 255, 255, 0.33);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  flex: 1;
+  padding: 56px;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
-  padding: 21px 58px;
+  outline: 1px solid rgba(255, 255, 255, 0);
+  outline-offset: -1px;
   backdrop-filter: blur(35px);
   -webkit-backdrop-filter: blur(35px);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 284px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  gap: 40px;
 }
 
 .why-content {
-  flex: 1;
-  max-width: 678px;
+  width: 678px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 64px;
 }
 
 .why-header {
-  margin-bottom: 61px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
 }
 
 .why-title {
   font-family: "Sora", sans-serif;
-  font-weight: 800;
-  font-size: clamp(36px, 4vw, 64px);
-  line-height: 1.26;
   color: #c43670;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .why-highlight {
-  color: #c43670;
+  width: 160px;
+  height: 96px;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  margin-right: 20px;
+}
+
+.why-title-rest {
+  width: 482px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.26;
 }
 
 .why-reasons {
-  width: 100%;
+  width: 678px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .why-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .why-item {
+  align-self: stretch;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 32px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #c43670;
+  gap: 5px;
 }
 
 .why-icon {
-  font-size: 36px;
-  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+
+.star-icon {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
 }
 
 .why-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #c43670;
   flex: 1;
 }
 
 .why-image {
-  flex: 1;
-  max-width: 500px;
+  width: 500.39px;
+  height: 500.39px;
+  position: relative;
 }
 
 .broken-heart-image {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0px 21px 41px rgba(0, 0, 0, 0.25);
+  width: 498.32px;
+  height: 498.32px;
+  position: absolute;
+  left: 2.07px;
+  top: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 1440px) {
-  .why-container {
-    max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+  .why-section {
+    padding: 0px 60px;
   }
 
   .why-card {
-    gap: 150px;
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .why-content {
+    width: 100%;
+    max-width: 600px;
+    gap: 48px;
+  }
+
+  .why-reasons {
+    width: 100%;
   }
 }
 
 @media (max-width: 1200px) {
-  .why-container {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-
   .why-card {
-    gap: 80px;
     flex-direction: column;
     text-align: center;
-    padding: 40px;
+    gap: 40px;
+    padding: 40px 30px;
   }
 
-  .why-content,
+  .why-header {
+    justify-content: center;
+  }
+
+  .why-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .why-highlight {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .why-title-rest {
+    width: auto;
+    font-size: 28px;
+  }
+
   .why-image {
-    max-width: 100%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .broken-heart-image {
+    width: 398px;
+    height: 398px;
   }
 }
 
 @media (max-width: 1024px) {
-  .why-title {
-    font-size: clamp(28px, 4vw, 48px);
+  .why-highlight {
+    font-size: 48px;
+  }
+
+  .why-title-rest {
+    font-size: 24px;
+  }
+
+  .why-text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 @media (max-width: 768px) {
   .why-section {
-    padding: 60px 24px;
+    padding: 0px 16px;
   }
 
   .why-card {
     padding: 30px 20px;
     border-radius: 30px;
+    gap: 30px;
   }
 
-  .why-header {
-    margin-bottom: 40px;
+  .why-content {
+    gap: 32px;
   }
 
-  .why-item {
+  .why-highlight {
+    font-size: 36px;
+  }
+
+  .why-title-rest {
+    font-size: 20px;
+  }
+
+  .why-text {
     font-size: 18px;
-    gap: 20px;
+    line-height: 22px;
   }
 
   .why-icon {
-    font-size: 28px;
+    gap: 16px;
+  }
+
+  .star-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .why-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .broken-heart-image {
+    width: 298px;
+    height: 298px;
   }
 }
 
 @media (max-width: 480px) {
-  .why-section {
-    padding: 40px 16px;
-  }
-
   .why-card {
     padding: 20px 15px;
     border-radius: 20px;
   }
 
-  .why-title {
-    font-size: clamp(20px, 5vw, 28px);
+  .why-content {
+    gap: 24px;
   }
 
-  .why-header {
-    margin-bottom: 30px;
+  .why-highlight {
+    font-size: 28px;
   }
 
-  .why-item {
+  .why-title-rest {
+    font-size: 18px;
+  }
+
+  .why-text {
     font-size: 16px;
-    gap: 15px;
-    flex-direction: column;
-    text-align: center;
+    line-height: 20px;
   }
 
-  .why-icon {
-    font-size: 24px;
+  .star-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .why-image {
+    width: 250px;
+    height: 250px;
   }
 
   .broken-heart-image {
+    width: 248px;
+    height: 248px;
     border-radius: 15px;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import brokenHeartImg from "../assets/images/broken-heart.png";
+import starCircleIcon from "../assets/images/star-circle.svg";
 import "./WhySection.css";
 
 interface WhySectionProps {
@@ -25,17 +26,19 @@ const WhySection: React.FC<WhySectionProps> = ({ className = "" }) => {
           <div className="why-content">
             <header className="why-header">
               <h2 id="why-heading" className="why-title">
-                <span className="why-highlight">Why</span> Most Muslim Marriages
-                Fail Within 5 Years
+                <span className="why-highlight">Why</span>
+                <span className="why-title-rest">
+                  Most Muslim Marriages Fail Within 5 Years
+                </span>
               </h2>
             </header>
             <div className="why-reasons">
               <ul className="why-list" role="list">
                 {reasons.map((reason, index) => (
                   <li key={index} className="why-item" role="listitem">
-                    <span className="why-icon" aria-hidden="true">
-                      ⭐
-                    </span>
+                    <div className="why-icon" aria-hidden="true">
+                      <img src={starCircleIcon} alt="" className="star-icon" />
+                    </div>
                     <span className="why-text">{reason}</span>
                   </li>
                 ))}
