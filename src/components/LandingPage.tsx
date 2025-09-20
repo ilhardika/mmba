@@ -24,11 +24,12 @@ const LandingPage: React.FC = () => {
       {/* Why Section */}
       <WhySection />
 
+      {/* Quiz Section */}
+      <QuizSection />
+
       {/* Our Semesters Section */}
       <SemestersSection />
 
-      {/* Quiz Section */}
-      <QuizSection />
       <SeatSection />
       <TestimonialsSection />
       <Footer />

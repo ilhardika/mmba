@@ -1,6 +1,5 @@
 import React from "react";
-import love3dImg from "../assets/images/love-3d-1.png";
-import hijabWoman2Img from "../assets/images/hijab-woman-2.png";
+import hijabQuizImg from "../assets/images/hijab-quiz.svg";
 import "./QuizSection.css";
 
 interface QuizSectionProps {
@@ -18,31 +17,10 @@ const QuizSection: React.FC<QuizSectionProps> = ({ className = "" }) => {
           <div className="quiz-visual">
             <div className="quiz-images">
               <img
-                src={love3dImg}
-                alt=""
-                className="love-3d-1"
+                src={hijabQuizImg}
+                alt="Marriage readiness quiz illustration"
+                className="hijab-quiz-img"
                 loading="lazy"
-                aria-hidden="true"
-              />
-              <img
-                src={hijabWoman2Img}
-                alt="Woman taking marriage readiness quiz"
-                className="hijab-woman"
-                loading="lazy"
-              />
-              <img
-                src={love3dImg}
-                alt=""
-                className="love-3d-2"
-                loading="lazy"
-                aria-hidden="true"
-              />
-              <img
-                src={love3dImg}
-                alt=""
-                className="love-3d-3"
-                loading="lazy"
-                aria-hidden="true"
               />
             </div>
           </div>
