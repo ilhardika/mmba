@@ -1,0 +1,246 @@
+/* Quiz Section */
+.quiz-section {
+  padding: 80px 36px;
+  background: white;
+}
+
+.quiz-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quiz-card {
+  background: linear-gradient(112deg, #f283af 46%, #ffd7e7 89%);
+  border-radius: 50px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  box-shadow: 0px 10px 24.5px rgba(0, 0, 0, 0.25);
+}
+
+.quiz-visual {
+  flex: 1;
+  position: relative;
+  height: 424px;
+}
+
+.quiz-images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.love-3d-1,
+.love-3d-2,
+.love-3d-3 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.love-3d-1 {
+  width: 90px;
+  height: 90px;
+  top: 165px;
+  left: 116px;
+}
+
+.love-3d-2 {
+  width: 117px;
+  height: 117px;
+  top: 235px;
+  right: 0;
+}
+
+.love-3d-3 {
+  width: 179px;
+  height: 179px;
+  top: -35px;
+  left: 93px;
+}
+
+.hijab-woman {
+  position: absolute;
+  top: -107px;
+  left: 20px;
+  width: 607px;
+  height: 531px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quiz-content {
+  flex: 1;
+  max-width: 676px;
+}
+
+.quiz-header {
+  margin-bottom: 30px;
+}
+
+.quiz-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-size: clamp(36px, 4vw, 64px);
+  line-height: 1.26;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 23px 0;
+}
+
+.quiz-description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0c0c0c;
+  margin: 0;
+  max-width: 560px;
+}
+
+.quiz-action {
+  margin-top: 30px;
+}
+
+.btn-quiz {
+  background: #0c0c0c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-quiz:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-quiz:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .quiz-container {
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .quiz-container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .quiz-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .quiz-visual,
+  .quiz-content {
+    max-width: 100%;
+  }
+
+  .quiz-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .quiz-title {
+    font-size: clamp(28px, 4vw, 48px);
+  }
+}
+
+@media (max-width: 768px) {
+  .quiz-section {
+    padding: 60px 24px;
+  }
+
+  .quiz-card {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+
+  .quiz-visual {
+    height: 250px;
+  }
+
+  .hijab-woman {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-radius: 20px;
+  }
+
+  .love-3d-1,
+  .love-3d-2,
+  .love-3d-3 {
+    display: none;
+  }
+
+  .quiz-title {
+    font-size: clamp(24px, 5vw, 36px);
+  }
+
+  .quiz-description {
+    font-size: 14px;
+  }
+
+  .btn-quiz {
+    padding: 16px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-section {
+    padding: 40px 16px;
+  }
+
+  .quiz-card {
+    padding: 20px 15px;
+    border-radius: 20px;
+  }
+
+  .quiz-visual {
+    height: 200px;
+  }
+
+  .quiz-title {
+    font-size: clamp(20px, 5vw, 28px);
+  }
+
+  .quiz-description {
+    font-size: 13px;
+  }
+
+  .quiz-header {
+    margin-bottom: 20px;
+  }
+
+  .quiz-action {
+    margin-top: 20px;
+  }
+
+  .btn-quiz {
+    padding: 14px 20px;
+    font-size: 13px;
+  }
+}
